@@ -1,0 +1,32 @@
+{
+    "name": "kin028/dcatadmin-sys-setting-extension",
+    "alias": "",
+    "description": "系统配置",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/kin028/dcatadmin-sys-setting-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kin028",
+            "email": "15675747308@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kin\\Setting\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Kin\\Setting\\SettingServiceProvider",
+        "laravel": {
+            "providers": [
+                "Kin\\Setting\\SettingServiceProvider"
+            ]
+        }
+    }
+}
